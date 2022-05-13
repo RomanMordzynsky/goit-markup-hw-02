@@ -1,0 +1,204 @@
+:root {
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --address-color: rgba(255, 255, 255, 0.6);
+    --additional-text-color: #000000;
+    --accent-color: #2196F3;
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #2F303A;
+    --additional-background-color: #F5F4FA;
+    --button-background-color: #188CE8;
+}
+
+.reset {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.primary-button {
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+    font-family: inherit;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    color: var(-primary-background-color);
+    background-color: var(--button-background-color);
+}
+
+.secondary-button {
+    color: var(--secondary-text-color);
+    background-color: var(--additional-background-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+}
+
+
+/* Стилізація логотипу */
+.logo-web {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo-studio {
+    color: var(--additional-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+/* Навігація сайту */
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.site-nav .link {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* Контакти */
+.site-contacts .link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+    color: var(--accent-color);
+}
+
+/* Секції */
+.section-title {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+/* Герой */
+.hero {
+    background-color: var(--secondary-background-color);
+}
+
+.hero-title {
+    color: var(--primary-background-color);
+    font-style: 400;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* Особливості */
+.features-list .title {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features-list .text {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Команда */
+.section-team {
+    background-color: var(--additional-background-color);
+}
+
+.team-list .title {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18px;
+    text-align: center;
+}
+
+.team-list .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18px;
+    text-align: center;
+}
+
+.works-list .title {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.work-list .text {
+    font-size: 16px;
+    line-height: 31.8;
+}
+
+/* Футер */
+.footer {
+    background-color: var(--secondary-background-color);
+    font-style: normal;
+}
+
+.footer .logo-studio {
+    color: var(--primary-background-color);
+}
+
+.physical-address {
+    color: var(--primary-background-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.address .link {
+    color: var(--address-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.address .link:hover,
+.address .link:focus {
+    color: var(--accent-color);
+}
