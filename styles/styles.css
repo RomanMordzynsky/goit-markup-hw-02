@@ -146,13 +146,9 @@ body {
 
 /* Команда */
 
-.section-team {
-    background-color: var(--additional-background-color);
-}
+.section-team { background-color: var(--additional-background-color); }
 
-.team-list {
-    background-color: var(--primary-background-color);
-}
+.team-list { background-color: var(--primary-background-color); }
 
 .team-list .title {
     font-weight: var(--secondary-font-weight);
