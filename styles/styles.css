@@ -1,37 +1,33 @@
 :root {
     --primary-text-color: #757575;
     --secondary-text-color: #212121;
-    --address-color: rgba(255, 255, 255, 0.6);
-    --additional-text-color: #000000;
-    --accent-color: #2196F3;
-    --primary-background-color: #FFFFFF;
-    --secondary-background-color: #2F303A;
-    --additional-background-color: #F5F4FA;
-    --button-background-color: #188CE8;
+    --address-color: rgba(255,255,255,0.6);
+    --additional-text-color: #000;
+    --accent-color: #2196f3;
+    --primary-background-color: #fff;
+    --secondary-background-color: #2f303a;
+    --additional-background-color: #f5f4fa;
+    --button-background-color: #188ce8;
+    --primary-font-weight: 700;
+    --secondary-font-weight: 500;
 }
 
-.reset {
-    list-style-type: none;
-}
+.reset { list-style-type: none; }
 
-.link {
-    text-decoration: none;
-}
+.link { text-decoration: none; }
 
 body {
     color: var(--primary-text-color);
-    background-color: var(--primary-background-color);
     font-family: Roboto, sans-serif;
-    letter-spacing: 0.03em;
+    letter-spacing: .03em;
+    background-color: var(--primary-background-color);
 }
 
-
-
 .primary-button {
-    color: var(--primary-background-color);
-    background-color: var(--accent-color);
     font-family: inherit;
     cursor: pointer;
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
 }
 
 .primary-button:hover,
@@ -41,14 +37,14 @@ body {
 }
 
 .secondary-button {
-    color: var(--secondary-text-color);
-    background-color: var(--additional-background-color);
     font-family: inherit;
-    font-weight: 500;
+    font-weight: var(--secondary-font-weight);
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     cursor: pointer;
+    color: var(--secondary-text-color);
+    background-color: var(--additional-background-color);
 }
 
 .secondary-button:hover,
@@ -57,22 +53,21 @@ body {
     background-color: var(--accent-color);
 }
 
-
-/* Стилізація логотипу */
+/* Логотип сайту */
 .logo-web {
-    color: var(--accent-color);
     font-family: Raleway, sans-serif;
-    font-weight: 700;
+    font-weight: var(--primary-font-weight);
     font-size: 26px;
     line-height: 1.2;
+    color: var(--accent-color);
 }
 
 .logo-studio {
-    color: var(--additional-text-color);
     font-family: Raleway, sans-serif;
-    font-weight: 700;
+    font-weight: var(--primary-font-weight);
     font-size: 26px;
     line-height: 1.2;
+    color: var(--additional-text-color);
 }
 
 /* Навігація сайту */
@@ -82,11 +77,11 @@ body {
 }
 
 .site-nav .link {
-    color: var(--secondary-text-color);
-    font-weight: 500;
+    font-weight: var(--secondary-font-weight);
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+    letter-spacing: .02em;
+    color: var(--secondary-text-color);
 }
 
 .site-nav .link:hover,
@@ -95,12 +90,13 @@ body {
 }
 
 /* Контакти */
+
 .site-contacts .link {
-    color: var(--primary-text-color);
-    font-weight: 500;
+    font-weight: var(--secondary-font-weight);
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+    letter-spacing: .02em;
+    color: var(--primary-text-color);
 }
 
 .site-contacts .link:hover,
@@ -109,37 +105,38 @@ body {
 }
 
 /* Секції */
+
 .section-title {
-    color: var(--secondary-text-color);
-    font-weight: 700;
+    font-weight: var(--primary-font-weight);
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    color: var(--secondary-text-color);
 }
 
 /* Герой */
-.hero {
-    background-color: var(--secondary-background-color);
-}
+
+.hero { background-color: var(--secondary-background-color); }
 
 .hero-title {
-    color: var(--primary-background-color);
     font-style: 400;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: .06em;
     text-transform: uppercase;
+    color: var(--primary-background-color);
 }
 
 /* Особливості */
+
 .features-list .title {
-    color: var(--secondary-text-color);
-    font-weight: 700;
+    font-weight: var(--primary-font-weight);
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    color: var(--secondary-text-color);
 }
 
 .features-list .text {
@@ -148,16 +145,21 @@ body {
 }
 
 /* Команда */
+
 .section-team {
     background-color: var(--additional-background-color);
 }
 
+.team-list {
+    background-color: var(--primary-background-color);
+}
+
 .team-list .title {
-    color: var(--secondary-text-color);
-    font-weight: 500;
+    font-weight: var(--secondary-font-weight);
     font-size: 16px;
     line-height: 1.18px;
     text-align: center;
+    color: var(--secondary-text-color);
 }
 
 .team-list .text {
@@ -166,13 +168,14 @@ body {
     line-height: 1.18px;
     text-align: center;
 }
+/* Роботи */
 
 .works-list .title {
-    color: var(--secondary-text-color);
-    font-weight: 700;
+    font-weight: var(--primary-font-weight);
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
+    letter-spacing: .06em;
+    color: var(--secondary-text-color);
 }
 
 .work-list .text {
@@ -181,25 +184,27 @@ body {
 }
 
 /* Футер */
-.footer {
-    background-color: var(--secondary-background-color);
-    font-style: normal;
-}
 
-.footer .logo-studio {
-    color: var(--primary-background-color);
+.footer {
+    font-style: normal;
+    background-color: var(--secondary-background-color);
 }
+/* Логотип футеру */
+
+.footer .logo-studio { color: var(--primary-background-color); }
+
+/* Адреси */
 
 .physical-address {
-    color: var(--primary-background-color);
     font-size: 14px;
     line-height: 1.71;
+    color: var(--primary-background-color);
 }
 
 .address .link {
-    color: var(--address-color);
     font-size: 14px;
     line-height: 1.71;
+    color: var(--address-color);
 }
 
 .address .link:hover,
