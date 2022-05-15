@@ -25,6 +25,11 @@ body {
 
 .primary-button {
     font-family: inherit;
+    font-weight: var(--primary-font-weight);
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: .06em;
     cursor: pointer;
     color: var(--primary-background-color);
     background-color: var(--accent-color);
